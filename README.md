@@ -1,0 +1,2 @@
+# RateIt
+Rate A Thing
