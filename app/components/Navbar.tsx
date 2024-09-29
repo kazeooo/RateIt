@@ -15,10 +15,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-4">
-          <Link href="/" className="hover:text-slate-300">首页</Link>
-          <Link href="/showcase" className="hover:text-slate-300">展示</Link>
-          <Link href="/about" className="hover:text-slate-300">关于我们</Link>
-          <Link href="/contact" className="hover:text-slate-300">联系我们</Link>
+          <Link href="/" className="hover:text-slate-300">
+            首页
+          </Link>
+          <Link href="/showcase" className="hover:text-slate-300">
+            展示
+          </Link>
+          <Link href="/about" className="hover:text-slate-300">
+            关于我们
+          </Link>
+          <Link href="/contact" className="hover:text-slate-300">
+            联系我们
+          </Link>
         </div>
 
         <div className="flex items-center">
