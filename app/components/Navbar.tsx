@@ -16,22 +16,60 @@ const Navbar = () => {
 
         <div className="hidden md:flex space-x-4">
           <Link href="/" className="hover:text-slate-300">
-            首页
+            Home
           </Link>
-          <Link href="/showcase" className="hover:text-slate-300">
-            展示
-          </Link>
+
+          <div className="relative group">
+            <button className="hover:text-slate-300 flex items-center">
+              Portfolio
+              <svg
+                className="w-4 h-4 ml-1 transition-transform duration-200 ease-in-out transform group-hover:translate-y-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div className="absolute left-0 mt-2 w-48 bg-slate-800 rounded-md shadow-lg hidden group-hover:block">
+              <Link
+                href="/showcase/web"
+                className="block px-4 py-2 text-sm hover:bg-slate-700"
+              >
+                Web Projects
+              </Link>
+              <Link
+                href="/showcase/mobile"
+                className="block px-4 py-2 text-sm hover:bg-slate-700"
+              >
+                Mobile Apps
+              </Link>
+              <Link
+                href="/showcase/design"
+                className="block px-4 py-2 text-sm hover:bg-slate-700"
+              >
+                Design Work
+              </Link>
+            </div>
+          </div>
+
           <Link href="/about" className="hover:text-slate-300">
-            关于我们
+            About
           </Link>
           <Link href="/contact" className="hover:text-slate-300">
-            联系我们
+            Contact
           </Link>
         </div>
 
         <div className="flex items-center">
           <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-            登录
+            Contact Me
           </button>
         </div>
       </div>

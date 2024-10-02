@@ -1,0 +1,12 @@
+.testopen[popover] {
+  display: block; /*默认是display:none，不会有动画*/
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: 0.3s;
+}
+.testopen[popover]:auto {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
